@@ -5,4 +5,9 @@
     <string name="menuHome">HOME</string>
     <string name="menuHelp">HELP</string>
     <string name="website_link">https://www.airbnb.ca/</string>
+    <string name="rentApartament">Apartament</string>
+    <string name="rentDetached">Detached Home</string>
+    <string name="rentSemi">Semi-detached Home</string>
+    <string name="rentalType">Please, select one of the following rental types:</string>
+    <string name="oneOptionError">Please select ast least 1 option</string>
 </resources>

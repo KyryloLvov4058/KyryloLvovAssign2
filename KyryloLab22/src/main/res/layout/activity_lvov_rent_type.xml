@@ -7,19 +7,67 @@
     tools:context=".KyryloActivity">
 
     <TextView
-        android:id="@+id/kyryloSecondScreenText"
+        android:id="@+id/kyryloRentScreenText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:maxWidth="320dp"
-        android:text="@string/mainScreenDescription"
+        android:maxWidth="300dp"
+        android:text="@string/rentalType"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.450" />
+        app:layout_constraintVertical_bias="0.350" />
+
+    <RadioGroup
+        android:id="@+id/kyryloRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/kyryloRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rentApartament">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/kyryloRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rentDetached">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/kyryloRadioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rentSemi">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/kyryloImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:minHeight="48dp"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.700" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

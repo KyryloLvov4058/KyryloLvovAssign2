@@ -24,7 +24,8 @@ public class LvovActivityWithMenu extends AppCompatActivity {
         Intent intent = null;
         switch (item.getItemId()) {
             case R.id.kyryloRent:
-                intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+14373452002"));
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+14373452002"));
                 startActivity(intent);
                 return true;
 
@@ -34,14 +35,13 @@ public class LvovActivityWithMenu extends AppCompatActivity {
                 return true;
 
             case R.id.kyryloHome:
+            case android.R.id.home:
                 intent = new Intent(LvovActivityWithMenu.this, KyryloActivity.class);
                 startActivity(intent);
                 return true;
 
             default:
-                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.website_link)));
-                startActivity(intent);
-                return true;
+                return false;
         }
     }
 }
