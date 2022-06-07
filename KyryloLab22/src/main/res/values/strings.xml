@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KyryloLvovN01414058</string>
     <string name="mainScreenDescription">We are Rentify! You can use this app in order to get information about rental properties of your choice</string>
+    <string name="buttonEnter">Enter</string>
 </resources>
