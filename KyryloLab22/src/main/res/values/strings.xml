@@ -2,4 +2,7 @@
     <string name="app_name">KyryloLvovN01414058</string>
     <string name="mainScreenDescription">We are Rentify! You can use this app in order to get information about rental properties of your choice</string>
     <string name="buttonEnter">Enter</string>
+    <string name="menuHome">HOME</string>
+    <string name="menuHelp">HELP</string>
+    <string name="website_link">https://www.airbnb.ca/</string>
 </resources>

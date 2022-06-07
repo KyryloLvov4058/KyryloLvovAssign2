@@ -3,14 +3,15 @@ package kyrylo.lvov.n01414058;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SplashScreenActivity extends AppCompatActivity {
+public class LvovRentTypeScreenActivity extends LvovActivityWithMenu {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        startActivity(new Intent(SplashScreenActivity.this, KyryloActivity.class));
-        finish();
+        setContentView(R.layout.activity_lvov_rent_type);
     }
 }
