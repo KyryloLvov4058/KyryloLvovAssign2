@@ -21,6 +21,7 @@
     <string name="cardNumber">Card Number</string>
     <string name="expiryDate">Expiry Date</string>
     <string name="cvv">CVV</string>
+    <string name="cannotBeEmpty">This field cannot be empty</string>
     <string-array name="text_detached">
         <item>4 Gaylord Drive - Scarborough, ON | $2,300/month</item>
         <item>423 Roxton Road - Toronto, ON | $2,150/month</item>
