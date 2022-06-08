@@ -1,3 +1,4 @@
+<!-- Kyrylo Lvov n01414058 section B -->
 <resources>
     <string name="app_name">KyryloLvovN01414058</string>
     <string name="mainScreenDescription">We are Rentify! You can use this app in order to get information about rental properties of your choice</string>
@@ -22,6 +23,13 @@
     <string name="expiryDate">Expiry Date</string>
     <string name="cvv">CVV</string>
     <string name="cannotBeEmpty">This field cannot be empty</string>
+    <string name="noNumbers">This field cannot contain numbers</string>
+    <string name="threeCharacters">This field must contain at least 3 characters</string>
+    <string name="sixteenCharacters">This field must contain 16 characters</string>
+    <string name="fourCharacters">This field must contain 4 characters</string>
+    <string name="equalThreeCharacters">This field must contain 3 characters</string>
+    <string name="alertTitle">Success!</string>
+    <string name="alertText">Your request is being processed</string>
     <string-array name="text_detached">
         <item>4 Gaylord Drive - Scarborough, ON | $2,300/month</item>
         <item>423 Roxton Road - Toronto, ON | $2,150/month</item>

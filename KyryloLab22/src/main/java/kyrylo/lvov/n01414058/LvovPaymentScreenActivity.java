@@ -31,31 +31,31 @@ public class LvovPaymentScreenActivity extends LvovActivityWithMenu {
             char[] cardNameArray = cardName.getText().toString().toCharArray();
             for (char c : cardNameArray) {
                 if (Character.isDigit(c)) {
-                    cardName.setError("This field cannot contain numbers");
+                    cardName.setError(getString(R.string.noNumbers));
                 }
             }
 
             if (cardName.getText().toString().matches("")) {
                 cardName.setError(getString(R.string.cannotBeEmpty));
             } else if (cardName.getText().toString().length() < 3) {
-                cardName.setError("This field must contain at least 3 characters");
+                cardName.setError(getString(R.string.threeCharacters));
             } else if (cardNumber.getText().toString().matches("")) {
                 cardNumber.setError(getString(R.string.cannotBeEmpty));
             } else if (cardNumber.getText().toString().length() != 16) {
-                cardNumber.setError("This field must contain 16 characters");
+                cardNumber.setError(getString(R.string.sixteenCharacters));
             } else if (cardExpiry.getText().toString().matches("")) {
                 cardExpiry.setError(getString(R.string.cannotBeEmpty));
             } else if (cardExpiry.getText().toString().length() != 4) {
-                cardExpiry.setError("This field must contain 4 characters");
+                cardExpiry.setError(getString(R.string.fourCharacters));
             } else if (cardCode.getText().toString().matches("")) {
                 cardCode.setError(getString(R.string.cannotBeEmpty));
             } else if (cardCode.getText().toString().length() != 3) {
-                cardCode.setError("This field must contain 3 characters");
+                cardCode.setError(getString(R.string.equalThreeCharacters));
             } else {
                 Context context = this;
                 new AlertDialog.Builder(context)
-                        .setTitle("Success!")
-                        .setMessage("Your request is being processed")
+                        .setTitle(R.string.alertTitle)
+                        .setMessage(R.string.alertText)
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent intent = new Intent(LvovPaymentScreenActivity.this, KyryloActivity.class);
