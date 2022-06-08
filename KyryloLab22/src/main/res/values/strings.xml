@@ -10,4 +10,8 @@
     <string name="rentSemi">Semi-detached Home</string>
     <string name="rentalType">Please, select one of the following rental types:</string>
     <string name="oneOptionError">Please select ast least 1 option</string>
+    <string name="type_apartament">apartment</string>
+    <string name="type_detached">detached</string>
+    <string name="type_semi">semi</string>
+    <string name="argument_rentalType">rentalType</string>
 </resources>

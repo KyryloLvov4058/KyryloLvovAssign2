@@ -28,20 +28,23 @@ public class LvovRentTypeScreenActivity extends LvovActivityWithMenu {
         RadioButton rb2 = findViewById(R.id.kyryloRadioButton2);
         RadioButton rb3 = findViewById(R.id.kyryloRadioButton3);
 
-        imgbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (rb1.isChecked()) {
-                    Log.d("D", "1 Checked");
-                } else if (rb2.isChecked()) {
-                    Log.d("D", "2 Checked");
-                } else if (rb3.isChecked()) {
-                    Log.d("D", "3 Checked");
-                } else {
-                    Toast toast = Toast.makeText(getApplicationContext(), R.string.oneOptionError, Toast.LENGTH_LONG);
-                    toast.show();
-                }
+        imgbtn.setOnClickListener(v -> {
+            if (rb1.isChecked()) {
+                viewBuildings(getString(R.string.type_apartament));
+            } else if (rb2.isChecked()) {
+                viewBuildings(getString(R.string.type_detached));
+            } else if (rb3.isChecked()) {
+                viewBuildings(getString(R.string.type_semi));
+            } else {
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.oneOptionError, Toast.LENGTH_LONG);
+                toast.show();
             }
         });
+    }
+
+    public void viewBuildings(String rentalType) {
+        Intent intent = new Intent(LvovRentTypeScreenActivity.this, LvovBuildingsScreenActivity.class);
+        intent.putExtra(getString(R.string.argument_rentalType), rentalType);
+        startActivity(intent);
     }
 }
