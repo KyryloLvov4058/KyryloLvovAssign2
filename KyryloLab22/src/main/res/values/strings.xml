@@ -5,13 +5,31 @@
     <string name="menuHome">HOME</string>
     <string name="menuHelp">HELP</string>
     <string name="website_link">https://www.airbnb.ca/</string>
-    <string name="rentApartament">Apartament</string>
+    <string name="rentApartment">Apartment</string>
     <string name="rentDetached">Detached Home</string>
     <string name="rentSemi">Semi-detached Home</string>
     <string name="rentalType">Please, select one of the following rental types:</string>
     <string name="oneOptionError">Please select ast least 1 option</string>
-    <string name="type_apartament">apartment</string>
-    <string name="type_detached">detached</string>
-    <string name="type_semi">semi</string>
     <string name="argument_rentalType">rentalType</string>
+    <string name="argument_rentalTypeFull">rentalTypeFull</string>
+    <string name="rentalTypeApartment">apartment</string>
+    <string name="rentalTypeDetached">detached</string>
+    <string name="rentalTypeSemi">semi</string>
+    <string name="rentalType_options">%1$s Options</string>
+    <string name="process">Process</string>
+    <string-array name="text_detached">
+        <item>4 Gaylord Drive - Scarborough, ON | $2,300/month</item>
+        <item>423 Roxton Road - Toronto, ON | $2,150/month</item>
+        <item>380 Wallace Avenue - Toronto, ON | $2,200/month</item>
+    </string-array>
+    <string-array name="text_apartment">
+        <item>5 Soudan Ave, Toronto, ON | $1,700/month</item>
+        <item>260 Wellesley Street East - Toronto, ON | $1,350/month</item>
+        <item>12 Auburndale Court - Etobicoke, ON | $2,700/month</item>
+    </string-array>
+    <string-array name="text_semi">
+        <item>28 Soudan Ave, Toronto, ON | $2,100/month</item>
+        <item>40 Roxton Road - Toronto, ON | $2,950/month</item>
+        <item>83 Gaylord Drive - Etobicoke, ON | $2,400/month</item>
+    </string-array>
 </resources>

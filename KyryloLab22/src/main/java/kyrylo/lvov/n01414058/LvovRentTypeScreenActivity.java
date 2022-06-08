@@ -3,14 +3,9 @@ package kyrylo.lvov.n01414058;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
@@ -30,11 +25,11 @@ public class LvovRentTypeScreenActivity extends LvovActivityWithMenu {
 
         imgbtn.setOnClickListener(v -> {
             if (rb1.isChecked()) {
-                viewBuildings(getString(R.string.type_apartament));
+                viewBuildings(getString(R.string.rentalTypeApartment), getString(R.string.rentApartment));
             } else if (rb2.isChecked()) {
-                viewBuildings(getString(R.string.type_detached));
+                viewBuildings(getString(R.string.rentalTypeDetached), getString(R.string.rentDetached));
             } else if (rb3.isChecked()) {
-                viewBuildings(getString(R.string.type_semi));
+                viewBuildings(getString(R.string.rentalTypeSemi), getString(R.string.rentSemi));
             } else {
                 Toast toast = Toast.makeText(getApplicationContext(), R.string.oneOptionError, Toast.LENGTH_LONG);
                 toast.show();
@@ -42,9 +37,10 @@ public class LvovRentTypeScreenActivity extends LvovActivityWithMenu {
         });
     }
 
-    public void viewBuildings(String rentalType) {
-        Intent intent = new Intent(LvovRentTypeScreenActivity.this, LvovBuildingsScreenActivity.class);
+    public void viewBuildings(String rentalType, String rentalTypeFull) {
+        Intent intent = new Intent(LvovRentTypeScreenActivity.this, LvovVisitScreenActivity.class);
         intent.putExtra(getString(R.string.argument_rentalType), rentalType);
+        intent.putExtra(getString(R.string.argument_rentalTypeFull), rentalTypeFull);
         startActivity(intent);
     }
 }
