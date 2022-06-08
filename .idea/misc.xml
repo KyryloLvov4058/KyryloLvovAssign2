@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="KyryloLab22/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
+        <entry key="KyryloLab22/src/main/res/drawable/ic_baseline_credit_card_24.xml" value="0.1265" />
         <entry key="KyryloLab22/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1155" />
+        <entry key="KyryloLab22/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1265" />
         <entry key="KyryloLab22/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
         <entry key="KyryloLab22/src/main/res/drawable/splash_background.xml" value="0.1155" />
         <entry key="KyryloLab22/src/main/res/drawable/splash_background_color.xml" value="0.2085" />
         <entry key="KyryloLab22/src/main/res/layout-land/activity_main.xml" value="0.165625" />
         <entry key="KyryloLab22/src/main/res/layout/activity_lvov_buildings_screen.xml" value="0.26439498680225326" />
+        <entry key="KyryloLab22/src/main/res/layout/activity_lvov_payment_screen.xml" value="0.3280757097791798" />
         <entry key="KyryloLab22/src/main/res/layout/activity_lvov_rent_type.xml" value="0.14402173913043478" />
         <entry key="KyryloLab22/src/main/res/layout/activity_main.xml" value="0.23100433349609376" />
         <entry key="KyryloLab22/src/main/res/menu/menu.xml" value="0.23854166666666668" />

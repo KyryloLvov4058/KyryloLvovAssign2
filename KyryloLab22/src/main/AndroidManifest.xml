@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KyryloLvovAssign2">
         <activity
+            android:name=".LvovPaymentScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".LvovVisitScreenActivity"
             android:exported="false" />
         <activity

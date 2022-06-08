@@ -17,6 +17,10 @@
     <string name="rentalTypeSemi">semi</string>
     <string name="rentalType_options">%1$s Options</string>
     <string name="process">Process</string>
+    <string name="cardholders_name">Cardholder\'s Name</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="expiryDate">Expiry Date</string>
+    <string name="cvv">CVV</string>
     <string-array name="text_detached">
         <item>4 Gaylord Drive - Scarborough, ON | $2,300/month</item>
         <item>423 Roxton Road - Toronto, ON | $2,150/month</item>
